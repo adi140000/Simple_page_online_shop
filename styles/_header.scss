@@ -1,0 +1,73 @@
+.main-header{
+    background-color: #ea2423;
+    color:white;
+    padding: 3vh  ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .free{
+        width:5vw ;
+        height:4vw ;
+        margin: 0 4vw; 
+        margin-bottom: -3vh;
+    }
+
+    .prc80{
+        height:8vw ;
+        width: 15vw;
+        margin-right: 3vw;
+    }
+
+    .counter{
+        
+        width: 20vw;
+        height: 8vw;
+        margin-right: 4vw; 
+        border: 0.1vw solid #ffffff;
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        flex-direction: column;
+        
+        .attention{  
+                       
+            font-size: 0.7vw;
+            font-weight: 300;
+            line-height: 1.5vw;
+            text-transform: uppercase;
+            display: block;
+            align-self: center;
+            margin-bottom: -3vw ;
+        }
+
+        .data{
+            display: flex;
+            justify-content: space-around;
+            .time-part{
+                text-transform: uppercase;
+                font-size: 0.9vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-width: 3vw ;
+                
+                .time{
+                    display: flex ;
+                    justify-content: center;
+                    font-size: 2vw;
+                    font-weight: 700;
+                    
+                }
+                .time-label{
+                    color: #2c2423;
+                    font-weight: 700;
+                }
+            }
+            
+
+        }
+       
+    }
+}
