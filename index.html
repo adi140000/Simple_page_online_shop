@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Test</title>
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
-    <header class="main-header">
+    <header class="main-header">   
+        <div class="hot_thuesday">
+            <img src="img/hot_thuesday.png">            
+        </div>    
         <img class="free" src="img/free_delivery.png">
         <div class="prc80">
             <img src="img/80prc.png">
@@ -20,19 +23,19 @@
             <div class="data">
                 <div class="time-part day">
                     <div class="time">0</div>
-                    <div class="time-label">dni</div>
+                    <div class="time-label"><strong>dni</strong></div>
                 </div>
                 <div class="time-part hours">
                     <div class="time">0</div>
-                    <div class="time-label">godz</div>
+                    <div class="time-label"><strong>godz</strong></div>
                 </div>
                 <div class="time-part minutes">
                     <div class="time">0</div>
-                    <div class="time-label">min</div>
+                    <div class="time-label"><strong>min</strong></div>
                 </div>
                 <div class="time-part seconds">
                     <div class="time">0</div>
-                    <div class="time-label">sek</div>
+                    <div class="time-label"><strong>sek</strong></div>
                 </div>
             </div>
         </div>
@@ -44,7 +47,7 @@
             </div>
         </section>
         <section class="sectionChoose">
-            <div class="choose">Pokaż :
+            <div class="choose"><strong>Pokaz :</strong>
                 <select class="show">
                     <option value=""></option>
                     <option value="2">2</option>
@@ -75,9 +78,8 @@
             </div> -->
 
         </section>
-    </main>
-    <script src="timer.js"></script>
-    <script src="data.js"></script>
+    </main>    
+    <script type="module" src="data.js"></script>
 </body>
 
 </html>

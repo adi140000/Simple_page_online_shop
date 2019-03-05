@@ -1,6 +1,10 @@
+import counter from "./timer.js";
+
 const section = document.querySelector("section.sectionPurchase");
 const choose = document.querySelector("select.show")
 let array = []
+
+counter();
 
 fetch("example.json")
     .then(data => data.json())

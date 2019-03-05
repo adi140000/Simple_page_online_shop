@@ -1,11 +1,11 @@
 //Main Content
 main{
+    font-size: 0.9vw;
     .sectionNote{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between;        
         .item{
-            margin:1vw ;
-            font-size: 0.8vw;
+            margin:1vw ;            
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,7 +23,7 @@ main{
                 text-transform: uppercase;
             }
             &.item2{
-                font-size: 0.7vw;
+                font-size: 0.9em;
             }
         }
     }
@@ -31,12 +31,16 @@ main{
     .sectionChoose{
         display: flex;
         justify-content: flex-end;
+        font-size: 1.5em;         
         .choose{
-            margin:1vw 8vw;
-            font-size: 1vw;
+            margin:1vw 8vw;                                
             .show{
                 border: 0.1vw solid #ebebeb;
-                width: 4vw;
+                font-size: .9em;
+                width: 5vw;
+                height:3vw ;
+                font-family: "Gotham - Book";
+                
             }
         }
     }
@@ -48,7 +52,7 @@ main{
         flex-wrap: wrap;            
         .block{
             margin:3vw;
-            flex-basis: 20vw;
+            flex-basis: 25%;
             height: 25vw;           
             border: 0.1vw solid #ebebeb;
             background-color: #ffffff;
@@ -60,7 +64,7 @@ main{
             .mainImg{
                 height:40% ;
                 width: 100%;
-                margin-bottom:15%; 
+                margin-bottom:5%; 
                 img{
                     width: 100%;
                     height: 100%;
@@ -73,26 +77,25 @@ main{
                     color: #ff0000;
                     margin-right:1vw;                    
                     font-weight: 700; 
-                    font-size: 1.2vw;
+                    font-size: 1.5em;
                 }
                 .deprecate{
                     font-weight: 400;
-                    color: #1a171b;
-                    font-size: 0.8vw;
+                    color: #1a171b;                    
                 }
             }
 
             .title{
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 1vw; 
-                margin-left: 1vw;
+                margin: 0 1vw;
                 height:15%; 
                 .main-title{
-                    font-size: 0.8vw;
+                    font-size: 0.9em;
+                    margin-bottom: 0.2vw;
                 }
                 .secend-title{
-                    font-size: 0.7vw;
+                    font-size: 0.8em;
                     color: #9f9f9f;
                 }
             }
@@ -104,7 +107,7 @@ main{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size:1vw;
+                font-size:1.2em;
                 img{
                     height: 1vw ;
                     width: 1vw;
@@ -117,7 +120,7 @@ main{
             .amountBar{                
                 left:0;                
                 width:40% ;
-                font-size: 1vw;                
+                font-size:1.2em;               
             }
             .outletBar{
                 right:0 ;
@@ -128,3 +131,36 @@ main{
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    main{
+        font-size: 1.6vw;
+        .sectionChoose{
+            font-size: 1.5em;
+            .choose{
+                .show{
+                    width: 8vw;
+                    height: 5vw;
+                }
+            }
+        }
+
+        .sectionPurchase{
+            .block{
+                margin-left:5vw;
+                margin-right:5vw;
+                flex-basis: 35%;
+                height: 35vw;
+                .blockBar{
+                    font-size: 0.8em;
+                }
+
+                .title{
+                    margin-bottom: 3vw;
+                }
+            }
+        }
+        
+    }
+}
+

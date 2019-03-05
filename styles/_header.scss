@@ -5,10 +5,17 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    .hot_thuesday{
+        width: 30vw;
+        height: 8vw;
+        margin-bottom: 1vw; 
+        margin-right: 5vw;
+        position: relative;
+    }
 
     .free{
-        width:5vw ;
-        height:4vw ;
+        width:6vw ;
+        height:5vw ;
         margin: 0 4vw; 
         margin-bottom: -3vh;
     }
@@ -17,6 +24,7 @@
         height:8vw ;
         width: 15vw;
         margin-right: 3vw;
+        
     }
 
     .counter{
@@ -29,10 +37,11 @@
         justify-content: space-around;
         align-items: stretch;
         flex-direction: column;
+        font-size: 0.8vw;
         
         .attention{  
                        
-            font-size: 0.7vw;
+           
             font-weight: 300;
             line-height: 1.5vw;
             text-transform: uppercase;
@@ -46,7 +55,6 @@
             justify-content: space-around;
             .time-part{
                 text-transform: uppercase;
-                font-size: 0.9vw;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -56,7 +64,7 @@
                 .time{
                     display: flex ;
                     justify-content: center;
-                    font-size: 2vw;
+                    font-size: 2em;
                     font-weight: 700;
                     
                 }
@@ -71,3 +79,39 @@
        
     }
 }
+
+
+@media only screen and (max-width: 768px) {
+    .main-header{
+        flex-direction: column;
+        align-items: center;       
+        
+        .prc80{
+            align-self:flex-start ;
+            margin-top: 4vw;
+            margin-left: 16vw;
+            width: 28vw;
+            height:18vw ;
+            order:2;
+            
+        }
+        .free{
+            order:3;
+            width: 13vw;
+            height: 10vw;
+            margin-left: 35vw;
+            padding:  5vw;              
+                     
+        }
+        .counter{
+            width: 60vw;
+            height: 20vw;;
+            order:1 ;
+            margin: 3vw 0;
+            font-size: 3vw;
+            
+        }
+        
+    }
+    
+} 
