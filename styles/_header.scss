@@ -84,7 +84,10 @@
 @media only screen and (max-width: 768px) {
     .main-header{
         flex-direction: column;
-        align-items: center;       
+        align-items: center;   
+        .hot_thuesday    {
+            display: none;
+        }
         
         .prc80{
             align-self:flex-start ;

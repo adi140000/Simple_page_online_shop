@@ -137,6 +137,9 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+  .main-header .hot_thuesday {
+    display: none;
+  }
   .main-header .prc80 {
     -ms-flex-item-align: start;
         align-self: flex-start;
