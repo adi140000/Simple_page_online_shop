@@ -1,17 +1,24 @@
-import counter from "./timer.js";
 
 const section = document.querySelector("section.sectionPurchase");
-const choose = document.querySelector("select.show")
-let array = []
-
-counter();
-
-fetch("example.json")
-    .then(data => data.json())
-    .then(data => {
+const choose = document.querySelector("select.show");
+let array = [];
+$.ajax({
+    url: "example.json",
+    dataType: "json"
+})
+    .done(data => {
         array = data.list.slice();
         createBlocks(array)
-    })
+    });
+
+
+/*fetch("example.json")
+    .then(data => data.json())
+    .then(data => {
+
+        array = data.list.slice();
+        createBlocks(array)
+    })*/
 
 const showChoose = e => {
     const number = e.target.value
@@ -93,5 +100,3 @@ const createBlocks = arr => {
 }
 
 choose.addEventListener("change", showChoose);
-
-

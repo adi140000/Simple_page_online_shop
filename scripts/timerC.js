@@ -1,10 +1,11 @@
-export default () => {
+
+const counter = () => {
     const contenerDay = document.querySelector(".time-part.day .time");
     const contenerHour = document.querySelector(".time-part.hours .time");
     const contenerMinute = document.querySelector(".time-part.minutes .time");
     const contenerSecond = document.querySelector(".time-part.seconds .time");
 
-    console.log(contenerDay);
+
 
     const now = new Date().getTime();
     const over = new Date(2019, 2, 8, 0, 0, 0, 0).getTime();
@@ -38,3 +39,5 @@ export default () => {
 
 
 };
+
+counter();
